@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  line-height: 1.5;
+  background: #ffffff;
+}
+
+.top-nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #ffffff;
+  border-bottom: 1px solid #ddd;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+
+.top-nav::-webkit-scrollbar {
+  display: none;
+}
+
+.nav-list {
+  display: inline-flex;
+  gap: 1rem;
+  padding: 0.7rem 1rem;
+}
+
+.nav-link {
+  color: #999999;
+  border-bottom: 1px dashed #999999;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.nav-link:hover {
+  color: #555;
+}
+
+.nav-link.active {
+  color: #f94125;
+  border-bottom: none;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+}
+
+.content {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem 1rem 3rem;
+}
+
+.article-block {
+  background: #ffffff;
+  margin-top: 1.1rem;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.article-title {
+  margin: 0 0 0.45rem;
+  font-size: 1.05rem;
+}
+
+.article-meta {
+  font-size: 0.7rem;
+  color: #777;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .nav-list {
+    gap: 0.8rem;
+    padding: 0.6rem 0.7rem;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+  }
+  .nav-link.active {
+    font-size: 0.95rem;
+  }
+}
